@@ -36,7 +36,6 @@ const main = async () => {
 
         await page.goto('https://www-nejm-org.proxy.lib.wayne.edu/search?date=completeArchive&q=covid-19&isAdvancedSearch=true#qs=%3Fdate%3DcompleteArchive%26q%3Dcovid-19%26requestType%3Dajax%26viewClass%3D%26isAdvancedSearch%3Dtrue%26sort%3Dscore%26manualFilterParam%3DcontentAge_delimiter_contentAge_firstDelimiter')
         await page.waitFor(5000)
-        await page.goto('https://www-nejm-org.proxy.lib.wayne.edu/search?date=completeArchive&q=covid-19&isAdvancedSearch=true#qs=%3Fdate%3DcompleteArchive%26q%3Dcovid-19%26requestType%3Dajax%26viewClass%3D%26isAdvancedSearch%3Dtrue%26page%3D3%26manualFilterParam%3DcontentAge_delimiter_contentAge_firstDelimiter');
 
         var j = 0;
         for (let x = 0; x < 10; x++) {
